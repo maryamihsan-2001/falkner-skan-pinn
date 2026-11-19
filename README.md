@@ -34,7 +34,7 @@ Parameters: Pr = 0.71, L = 8, 6000 Adam + 300 L-BFGS iterations.
 ## References
 - V. M. Falkner and S. W. Skan, Phil. Mag. 12 (1931) 865.
 - M. Raissi, P. Perdikaris, G. E. Karniadakis, J. Comput. Phys. 378 (2019).
-- Code written with AI assistance (Claude).
+
 
 ## Possible extensions
 Magnetic (MHD) term, viscous dissipation, weak-form loss.
