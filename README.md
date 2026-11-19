@@ -18,8 +18,19 @@ python prandtl_study.py
 Known values: f''(0) ≈ 0.4696 (β=0), ≈ 1.2326 (β=1).
 
 ## Results
-(Insert results/comparison.png and your error table here.)
+![Comparison](results/comparison.png)
+![Prandtl study](results/prandtl_study.png)
 
+## Validation results
+
+| β | Quantity | solve_bvp | PINN | Error % |
+|---|----------|-----------|------|---------|
+| 0.0 | f''(0) | 0.46960 | 0.46959 | 0.00 |
+| 0.0 | -θ'(0) | 0.41601 | 0.41592 | 0.02 |
+| 1.0 | f''(0) | 1.23259 | 1.23252 | 0.01 |
+| 1.0 | -θ'(0) | 0.49866 | 0.49861 | 0.01 |
+
+Parameters: Pr = 0.71, L = 8, 6000 Adam + 300 L-BFGS iterations.
 ## References
 - V. M. Falkner and S. W. Skan, Phil. Mag. 12 (1931) 865.
 - M. Raissi, P. Perdikaris, G. E. Karniadakis, J. Comput. Phys. 378 (2019).
